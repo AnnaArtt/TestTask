@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://annaartt.github.io/testtask",
+  "homepage": "https://AnnaArtt.github.io/TestTask",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
