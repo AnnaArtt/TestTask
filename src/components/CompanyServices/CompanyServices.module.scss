@@ -1,0 +1,67 @@
+@import "../../scss/main.scss";
+
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  width: 100%;
+  padding: 10px;
+  .wrapperContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+    .title {
+      @include fontTitle;
+      z-index: 100;
+      color: $white;
+      margin-bottom: 10px;
+    }
+    .tabList {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 5px;
+      overflow-y: hidden;
+      overflow-x: scroll;
+      height: 50px;
+      border-bottom: 1px solid $white;
+      padding: 0 10px;
+    }
+
+    .tabList::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    .tabList::-webkit-scrollbar-track {
+      background: inherit;
+    }
+
+    .tabList::-webkit-scrollbar-thumb {
+      background-color: $lightGray;
+      border-radius: 20px;
+    }
+  }
+}
+
+.tab {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  padding: 0 3px;
+  height: 70%;
+  width: auto;
+  overflow: hidden;
+  color: $white;
+  @include fontText;
+}

@@ -1,0 +1,14 @@
+@import "../../scss/main.scss";
+.title {
+  @include fontTitle;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: $cyan 1px 0 10px;
+  color: $white;
+  @media (max-width: 426px) {
+    font-size: 22px;
+  }
+  @media (max-width: 376px) {
+    font-size: 20px;
+  }
+}

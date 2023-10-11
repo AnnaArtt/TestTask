@@ -1,0 +1,58 @@
+@import "../../scss/main.scss";
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: auto;
+
+  .wrapperTitle {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid $white;
+    padding: 5px 10px;
+    z-index: 100;
+    background-color: $blackBackground;
+    .title {
+      @include fontText;
+      max-width: 80%;
+      color: $white;
+      font-size: 24px;
+      @media (max-width: 426px) {
+        font-size: 18px;
+      }
+    }
+    .arrow {
+      height: 18px;
+      width: 18px;
+      transition: all 0.7s ease;
+      transform: rotate(180deg);
+      border-radius: 50%;
+      background-color: $white;
+      padding: 5px;
+    }
+    .arrowRotate {
+      transform: rotate(0deg);
+      transition: all 0.7s ease;
+    }
+  }
+  .text {
+    @include fontText;
+    position: relative;
+    padding: 7px;
+    color: $white;
+    top: 0;
+    transition: all 0.7s ease;
+    z-index: 10;
+    font-size: 16px;
+  }
+  .displayNone {
+    position: absolute;
+    top: -100px;
+    border: 0px;
+    transition: all 0.7s ease;
+  }
+}

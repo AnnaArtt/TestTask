@@ -1,0 +1,42 @@
+@import "../../scss/main.scss";
+.mainTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+  width: 50%;
+  // margin-bottom: 45px;
+
+  @media (max-width: 769px) {
+    width: 80%;
+    padding-bottom: 20vh;
+  }
+}
+
+.slogan {
+  @include fontTitle;
+  font-size: 48px;
+  color: #ffffff;
+}
+
+.type::selection,
+.slogan::selection {
+  color: $cyan;
+  background-color: initial;
+}
+
+.type {
+  animation: type_effect 0.7s infinite alternate;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+@keyframes type_effect {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

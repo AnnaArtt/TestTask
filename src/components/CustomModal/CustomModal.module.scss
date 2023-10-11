@@ -1,0 +1,82 @@
+@import "../../scss/main.scss";
+
+.wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  bottom: 0;
+  width: 100%;
+  z-index: 150;
+  transition: all 1.5s ease;
+  opacity: 100%;
+}
+.notWrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  width: 100%;
+  z-index: 150;
+  bottom: -300px;
+  transition: all 1.5s ease;
+  opacity: 0;
+}
+
+.modal {
+  position: relative;
+  max-width: 60%;
+  width: 50%;
+  max-height: 20vh;
+  padding: 10px;
+  background-color: $blackBackground;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  @media (max-width: 769px) {
+    max-height: 40vh;
+    width: 80%;
+  }
+
+  .closeModal {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 24px;
+    height: 24px;
+    opacity: 0.2;
+    cursor: pointer;
+    transition: opacity ease 0.5s;
+    @media (max-width: 426px) {
+      width: 18px;
+      height: 18px;
+    }
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .closeModal::before,
+  .closeModal::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    display: block;
+    width: 24px;
+    height: 3px;
+    background: $white;
+
+    @media (max-width: 426px) {
+      width: 18px;
+      height: 2px;
+    }
+  }
+
+  .closeModal::before {
+    transform: rotate(45deg);
+  }
+
+  .closeModal::after {
+    transform: rotate(-45deg);
+  }
+}

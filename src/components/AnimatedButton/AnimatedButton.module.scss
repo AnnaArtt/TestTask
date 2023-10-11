@@ -1,0 +1,56 @@
+@import "../../scss/main.scss";
+
+.button {
+  position: relative;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: $blackBackground;
+  color: $white;
+
+  height: 50px;
+
+  width: 150px;
+  font-size: 18px;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+
+  @media (max-width: 426px) {
+    height: 45px;
+
+    width: 130px;
+    font-size: 16px;
+  }
+}
+
+.button:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-out;
+}
+
+.button:after {
+  background: $white;
+  content: "";
+  height: 150px;
+  left: -75px;
+  opacity: 0.5;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms ease;
+  width: 50px;
+  z-index: 10;
+
+  animation: circle 2s linear infinite;
+}
+
+@keyframes circle {
+  0% {
+    left: -75px;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 120%;
+  }
+}

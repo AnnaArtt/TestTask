@@ -1,0 +1,10 @@
+@import "../../scss/main.scss";
+
+.whyUsBlock {
+  position: relative;
+  width: 100%;
+  .sectionName {
+    @include fontTitle;
+    color: $white;
+  }
+}

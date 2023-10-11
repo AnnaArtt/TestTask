@@ -1,0 +1,13 @@
+@import "../../scss/main.scss";
+.scrollObserverWrapper {
+  display: flex;
+  justify-content: center;
+  opacity: 100%;
+  @include scrollBlockAnimation;
+  width: 100%;
+  height: auto;
+}
+
+.scrollObserverWrapperNotVisible {
+  opacity: 0%;
+}

@@ -1,0 +1,26 @@
+@import "../../scss/main.scss";
+
+.wrapper {
+  position: relative;
+  width: 80%;
+  margin: 10px 0 30px 0;
+  z-index: 100;
+  background-color: $blackBackground;
+  @media (max-width: 426px) {
+    width: 95%;
+  }
+  .title {
+    @include fontTitle;
+    color: $white;
+    z-index: 100;
+  }
+  .wrapperInfo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+  }
+}

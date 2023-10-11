@@ -1,0 +1,45 @@
+@import "../../scss/main.scss";
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .mainInformationBlock {
+    position: relative;
+    .email {
+      position: relative;
+      margin-bottom: 5px;
+      width: auto;
+      @include fontText;
+      font-size: 24px;
+      color: $white;
+    }
+    .line {
+      position: relative;
+      height: 1px;
+      width: inherit;
+      background-color: rgba($color: $white, $alpha: 0.5);
+      margin-bottom: 5px;
+    }
+    .address {
+      @include fontText;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+  .socialMedia {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    gap: 15px;
+  }
+}

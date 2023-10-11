@@ -1,0 +1,23 @@
+@import "../../scss/main.scss";
+.wrapper {
+  position: relative;
+  width: 100%;
+  .title {
+    @include fontTitle;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  .carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    img {
+      height: auto;
+      width: 60vw;
+      cursor: text 20 20, auto;
+    }
+  }
+}

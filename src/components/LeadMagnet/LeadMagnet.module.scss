@@ -1,0 +1,34 @@
+@import "../../scss/main.scss";
+
+.wrapperImg {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  left: 20px;
+  background-color: $white;
+  padding: 10px;
+
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  animation: discount 1s linear infinite;
+  z-index: 200;
+  .img {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@keyframes discount {
+  0% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}

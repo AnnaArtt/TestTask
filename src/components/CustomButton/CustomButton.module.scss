@@ -1,0 +1,22 @@
+@import "../../scss/main.scss";
+
+.button {
+  position: relative;
+  border: 1px solid $white;
+  border-radius: 5px;
+  background-color: $blackBackground;
+  color: $white;
+
+  height: 50px;
+
+  width: 150px;
+  font-size: 18px;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  border: 1px solid $blackBackground;
+  background-color: $white;
+  color: $blackBackground;
+  transition: all 0.3s ease-out;
+}

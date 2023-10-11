@@ -1,0 +1,31 @@
+@import "../../scss/main.scss";
+.tabsWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  border: 1px solid $white;
+  border-radius: 5px;
+
+  .selectedTabPanel {
+    position: relative;
+    display: block;
+    height: 70vh;
+    max-height: 550px;
+    color: $white;
+    @media (max-width: 768px) {
+      height: auto;
+      max-height: none;
+    }
+  }
+
+  .selectedTab {
+    border: 1px solid $white;
+    border-radius: 5px;
+  }
+  .selectedTab::after {
+    content: "";
+    width: 0;
+    height: 0;
+  }
+}
