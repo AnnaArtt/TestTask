@@ -1,7 +1,7 @@
 @import "../../scss/main.scss";
 .wrapper {
   position: relative;
-  width: 100%;
+  width: 60vw;
   .title {
     @include fontTitle;
     color: $white;
@@ -14,10 +14,13 @@
     align-items: center;
     height: auto;
     width: 100%;
+    cursor: pointer;
+    z-index: 10;
     img {
       height: auto;
-      width: 60vw;
-      cursor: text 20 20, auto;
+      width: 100%;
+      cursor: pointer;
+      z-index: 1;
     }
   }
 }
